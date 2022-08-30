@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoring window</title>
+    <link rel="stylesheet" href="scoring_window.css">
+</head>
+
+<body>
+    <!--Logo section  -->
+    <div class="logo-section">
+        <div class="logo-nav ">
+            <div class="to-chuc">
+                <h5>Đơn vị tổ chức</h5>
+                <div class="logo-container">
+                    <div class="to-chuc-item"><img src="img/UIT.png" alt=""></div>
+                    <div class="to-chuc-item"><img src="img/Logo CE no-stroke.png" alt=""></div>
+                    <div class="to-chuc-item"><img src="img/Asset 2.png" alt=""></div>
+                    <div class="to-chuc-item"><img src="img/HoiSinhvien.png" alt=""></div>
+                    <div class="to-chuc-item"><img src="img/CEEC.png" alt=""></div>
+                </div>
+            </div>
+            <div class="tai-tro-dong">
+                <h5>Đơn vị tài trợ đồng</h5>
+                <div class="logo-container">
+                    <div class="dong-item"><img src="img/dek.png" alt=""></div>
+                    <div class="dong-item"><img src="img/renesas.png" alt=""></div>
+                    <div class="dong-item"><img src="img/faraday.png" alt=""></div>
+                    <div class="dong-item"><img src="img/gannha.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="logo-nav ">
+            <div class="tai-tro-vang">
+                <h5>Đơn vị tài trợ vàng</h5>
+                <div class="logo-container ">
+                    <div class="vang-item"><img src="img/snst.png" alt=""></div>
+                </div>
+            </div>
+            <div class="dong-hanh">
+                <h5>Đơn vị đồng hành</h5>
+                <div class="logo-container dong-hanh-img">
+                    <div class="hanh-item"><img src="img/asic.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End logo section  -->
+
+    <!--Control section  -->
+    <div class="control-section">
+        <div class="previous-nav">
+            <div class="previous-button" onclick="LoadPrevious()">Previous</div>
+        </div>
+        <div class="control-nav">
+            <div class="swap-button" onclick="LoadSwap()">swap</div>
+        </div>
+        <div class="next-nav">
+            <div class="next-button" onclick="LoadNext()">Next</div>
+        </div>
+    </div>
+
+    <div class="team-info">
+        <div class="team-info-size team-info-1">
+            <div class="team-name" id="team-name1">Team 1</div>
+            <div class="controller" id="school-1">SCHOOL 1</div>
+            <div class="controller" id="controller-1">Controller_v1</div>
+        </div>
+        <div class="img1vs1">
+            <img src="img/vs11_v1_resized.png" alt="1vs1" style="object-fit: fill; width: auto; height: 70px;">
+            <!-- <h3>VS</h3> -->
+        </div>
+        <div class="team-info-size team-info-2">
+            <div class="team-name" id="team-name2">Team 2</div>
+            <div class="controller" id="school-2">SCHOOL 2</div>
+            <div class="controller" id="controller-2">Controller_v2</div>
+        </div>
+    </div>
+
+    <div class="button-nav">
+        <!-- <div class="load-button" onclick="LoadReset()">Reset</div> -->
+        <div class="load-button" onclick="LoadStart()">Load</div>
+        <div class="load-button" id="save-db" onclick="SaveResult2DB()">Save</div>
+
+    </div>
+    <!-- End Control section -->
+
+    <!-- Stopwatch -->
+    <div class="stopwatch">
+        <h2 id="stopwatch-time">00:00.000</h2>
+    </div>
+
+    <!-- Checkpoint section -->
+    <!-- TEAM A -->
+    <div class="checkpoint-section">
+        <div class="generate-checkpoint generate-checkpoint_blue" id="gen-cp1">
+            <div class="result">
+                <div class="result-detail">
+                    <h4>Total Score</h4>
+                    <h4 id="result-score1">0</h4>
+                </div>
+                <div class="result-detail">
+                    <h4>Finish </h4>
+                    <h4 id="result-time1">--:--:---</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- TEAM B -->
+        <div class="generate-checkpoint generate-checkpoint_red" id="gen-cp2">
+            <!-- Tự động tạo checkpoint -->
+            <div class="result">
+                <div class="result-detail">
+                    <h4>Total Score</h4>
+                    <h4 id="result-score2">0</h4>
+                </div>
+                <div class="result-detail">
+                    <h4>Finish </h4>
+                    <h4 id="result-time2">--:--:---</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="winner-noti">
+        <h2 id="winner-team"></h2>
+    </div>
+
+    <!-- End Checkpoint section -->
+    <!-- Control test section -->
+    <div class="control-test">
+        <div class="team-a">
+            <div class="team-pass" onclick="DemoPass('A')">Pass</div>
+            <div class="team-outline" onclick="DemoOutline('A')">Outline</div>
+        </div>
+        <div class="team-b">
+            <div class="team-pass" onclick="DemoPass('B')">Pass</div>
+            <div class="team-outline" onclick="DemoOutline('B')">Outline</div>
+        </div>
+    </div>
+
+    <!-- End Control test section -->
+    <script src="DOM.js"></script>
+    <script src="scoring_window.js"></script>
+</body>
+
+</html>
