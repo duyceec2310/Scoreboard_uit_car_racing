@@ -10,10 +10,10 @@
     --yellow-linear:linear-gradient(180deg,
      #FFA931 0%,
      #2F1600 100%);
-    --button-color: linear-gradient(to bottom,#edc309,#ed6c09,
-    #F26144 ,
-    #912C24 );
-    --button-color-hover: #f26144;
+    --button-color: linear-gradient(to right,
+      #912C24 0%,
+      rgba(242,97,68,1) 52%,
+      #f26144 100%);
     --time-counter: linear-gradient(180deg,
     rgba(43, 43, 43, 0) 0%,
     rgba(113, 113, 113, 0.59) 100%);
@@ -45,7 +45,6 @@ body {
 
 
 /* logo section */
-
 .logo-section {
     display: flex;
     flex-direction: row;
@@ -61,14 +60,11 @@ body {
     width: 33%;
     flex-direction: column-reverse;
 }
+
 .logo-section .logo-nav {
     display: flex;
     flex-direction: column;
 }
-
-
-
-
 
 h5 {
     text-align: center;
@@ -132,11 +128,6 @@ h5 {
     margin: auto;
     margin-top: 15%;
 }
-.logo-section .logo-nav .logo-container .to-chuc-item img {
-    width: 100%;
-    height: auto;
-}
-
 
 .logo-section .logo-nav .logo-container .vang-item {
     width: 15vw;
@@ -176,11 +167,6 @@ h5 {
     margin-top: 1.5vw;
     width: auto;
 }
-.logo-section .logo-nav .logo-container .vang-item img {
-    width: 100%;
-}
-
-
 
 .logo-section .logo-nav .logo-container .hanh-item {
     width: 16vw;
@@ -207,15 +193,9 @@ h5 {
     width: auto;
     margin: auto;
 }
-
-
-
-
 /*end logo section */
 
-
 /* Control section */
-
 .control-section {
     display: flex;
     flex-direction: row;
@@ -250,24 +230,13 @@ h5 {
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
-    
     background-size: 200% auto;
-
-    
     transition: 0.3s;
 }
 
 .btn-color
 {
-   background-image:  linear-gradient(to right,
-   #912C24 0%,
-     rgba(242,97,68,1) 52%,
-     #f26144 100%);
-}
-.previous-button:hover,
-.next-button:hover {
-    background-position: right center;
-    
+   background-image:  var(--button-color);
 }
 
 .swap-button,
@@ -290,15 +259,15 @@ h5 {
     margin: 0 10px;
     text-align: center;
 }
-
+.previous-button:hover,
+.next-button:hover,
 .swap-button:hover,
-.load-button:hover {
+.load-button:hover,
+.save-button:hover 
+{
     background-position: right center;
 }
 
-.save-button:hover {
-    background-position: right center;
-}
 .team-info {
   display: flex;
   flex-direction: row;
@@ -316,9 +285,6 @@ h5 {
   padding: 10px 0;
 }
 
-
-
-
 .img1vs1 {
     margin: auto;
     justify-items: center;
@@ -330,8 +296,7 @@ h5 {
     justify-content: center;
 }
 
-.team-name {
-    
+.team-name {  
     justify-content: center;
     font-family: 'Genos';
     font-style: normal;
@@ -376,8 +341,6 @@ h5 {
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
-
-
 }
 /* Checkpoint-section */
 
@@ -419,7 +382,6 @@ h5 {
     justify-content: space-between;
     margin: 4px 0; 
     border-radius: 4px;
-    
     font-family:'Genos', sans-serif; 
     font-size: 25px;
 }
