@@ -12,39 +12,35 @@
 <body>
     <!--Logo section  -->
     <div class="logo-section">
-        <div class="logo-nav ">
+        <div id="col-1" class="logo-nav ">
             <div class="to-chuc">
-                <h5>Đơn vị tổ chức</h5>
+                <h5>ĐƠN VỊ TỔ CHỨC</h5>
                 <div class="logo-container">
-                    <div class="to-chuc-item"><img src="img/UIT.png" alt=""></div>
-                    <div class="to-chuc-item"><img src="img/Logo CE no-stroke.png" alt=""></div>
-                    <div class="to-chuc-item"><img src="img/Asset 2.png" alt=""></div>
-                    <div class="to-chuc-item"><img src="img/HoiSinhvien.png" alt=""></div>
-                    <div class="to-chuc-item"><img src="img/CEEC.png" alt=""></div>
+                    <div class="to-chuc-item"><img id="uit" src="img/UIT.png" alt=""></div>
+                    <div class="to-chuc-item"><img id="doan" src="img/Asset 2.png" alt=""></div>
+                    <div class="to-chuc-item"><img  id="hoi" src="img/HoiSinhvien.png" alt=""></div>
+                    <div class="to-chuc-item"><img id="khoa"src="img/LOGO CE - stroke v2.png" alt=""></div>
+                    <div class="to-chuc-item"><img id="clb"src="img/CEEC.png" alt=""></div>
                 </div>
             </div>
-            <div class="tai-tro-dong">
-                <h5>Đơn vị tài trợ đồng</h5>
+            <div class="tai-tro-vang">
+                <h5>NHÀ TÀI TRỢ VÀNG</h5>
                 <div class="logo-container">
-                    <div class="dong-item"><img src="img/dek.png" alt=""></div>
-                    <div class="dong-item"><img src="img/renesas.png" alt=""></div>
-                    <div class="dong-item"><img src="img/faraday.png" alt=""></div>
-                    <div class="dong-item"><img src="img/gannha.png" alt=""></div>
+                    <div class="vang-item"><img id="bosch" src="img/Bosch.png" alt=""></div>
+                    <div class="vang-item"><img id="dek" src="img/dek.png" alt=""></div>
+                    <div class="vang-item"><img id="faraday" src="img/faraday.png" alt=""></div>
+                    <div class="vang-item"><img id="gannha"src="img/gannha.png" alt=""></div>
                 </div>
             </div>
         </div>
 
-        <div class="logo-nav ">
-            <div class="tai-tro-vang">
-                <h5>Đơn vị tài trợ vàng</h5>
-                <div class="logo-container ">
-                    <div class="vang-item"><img src="img/snst.png" alt=""></div>
-                </div>
-            </div>
+        <div id="col-2" class="logo-nav ">
+    
             <div class="dong-hanh">
-                <h5>Đơn vị đồng hành</h5>
-                <div class="logo-container dong-hanh-img">
-                    <div class="hanh-item"><img src="img/asic.png" alt=""></div>
+                <h5>NHÀ TÀI TRỢ BẠC</h5>
+                <div class="logo-container">
+                    <div class="hanh-item"><img id="fpt" src="img/FPT.png" alt=""></div>
+                    <div class="hanh-item"><img id="asic" src="img/asic.png" alt=""></div>
                 </div>
             </div>
         </div>
@@ -54,13 +50,13 @@
     <!--Control section  -->
     <div class="control-section">
         <div class="previous-nav">
-            <div class="previous-button" onclick="LoadPrevious()">Previous</div>
+            <div class="previous-button btn-color" onclick="LoadPrevious()">PREVIOUS</div>
         </div>
         <div class="control-nav">
-            <div class="swap-button" onclick="LoadSwap()">swap</div>
+            <div class="swap-button btn-color" onclick="LoadSwap()">SWAP</div>
         </div>
         <div class="next-nav">
-            <div class="next-button" onclick="LoadNext()">Next</div>
+            <div class="next-button btn-color" onclick="LoadNext()">NEXT</div>
         </div>
     </div>
 
@@ -71,7 +67,7 @@
             <div class="controller" id="controller-1">Controller_v1</div>
         </div>
         <div class="img1vs1">
-            <img src="img/vs11_v1_resized.png" alt="1vs1" style="object-fit: fill; width: auto; height: 70px;">
+            <img src="img/vs.png" alt="1vs1" style="width: auto; height: 180px;">
             <!-- <h3>VS</h3> -->
         </div>
         <div class="team-info-size team-info-2">
@@ -83,8 +79,8 @@
 
     <div class="button-nav">
         <!-- <div class="load-button" onclick="LoadReset()">Reset</div> -->
-        <div class="load-button" onclick="LoadStart()">Load</div>
-        <div class="load-button" id="save-db" onclick="SaveResult2DB()">Save</div>
+        <div class="load-button btn-color" onclick="LoadStart()">LOAD</div>
+        <div class="save-button btn-color" id="save-db" onclick="SaveResult2DB()">SAVE</div>
 
     </div>
     <!-- End Control section -->

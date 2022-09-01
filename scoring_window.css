@@ -1,9 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos&display=swap');
+:root {
+    --blue-linear:linear-gradient(180deg,
+     #070056 0%,
+     rgba(21, 4, 220, 0.738823) 46.35%,
+     rgba(103, 89, 255, 0.499256) 100%);
+
+    --yellow-linear:linear-gradient(180deg,
+     #FFA931 0%,
+     #2F1600 100%);
+    --button-color: linear-gradient(to bottom,#edc309,#ed6c09,
+    #F26144 ,
+    #912C24 );
+    --button-color-hover: #f26144;
+    --time-counter: linear-gradient(180deg,
+    rgba(43, 43, 43, 0) 0%,
+    rgba(113, 113, 113, 0.59) 100%);
+    --pass-checkpoint:  linear-gradient(180deg, 
+    rgba(0, 255, 99, 0.54) 0%, 
+    rgba(0, 44, 17, 0.41) 100%);
+    --fail-checkpoint: linear-gradient(180deg, 
+    #F9513B 0%, 
+    #670000 97.06%);
+}
+.geo-font {
+    font-family: 'Georama';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 12px;
+    /* or 67% */   
+    
+    color: #FFFFFF;   
+}
 html,
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #E8DDCB;
+    background: linear-gradient(180deg, #0D0E10 0%, #363636 100%);
+    opacity: 0.9;
 }
 
 
@@ -16,67 +53,162 @@ body {
     margin-bottom: 10px;
 }
 
+.logo-section #col-1 {
+    width: 66%;
+}
+
+.logo-section #col-2 {
+    width: 33%;
+    flex-direction: column-reverse;
+}
 .logo-section .logo-nav {
     display: flex;
     flex-direction: column;
 }
 
-.logo-section .logo-nav:nth-child(1) {
-    flex: 3;
-}
 
-.logo-section .logo-nav:nth-child(2) {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
+
 
 h5 {
     text-align: center;
     margin: 0;
+    color: white;
+    font-family: 'Genos',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
 }
 
 .logo-section .logo-nav .logo-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+    gap: 5px;
 }
 
 .logo-section .logo-nav .logo-container .to-chuc-item {
-    width: 7vw;
-    height: auto;
+    width: 8vw;
+    height: 8vw;
+    background: #FFFFFF;
+    border-radius: 50%;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
 }
 
+.logo-section .logo-nav .logo-container .to-chuc-item #uit {
+    width: auto;
+    height: 65%;
+    margin: auto;
+}
+
+.logo-section .logo-nav .logo-container .to-chuc-item #doan {
+    width: auto;
+    height: 76%;
+    margin: auto;
+}
+
+.logo-section .logo-nav .logo-container .to-chuc-item #hoi {
+    width: auto;
+    height: 76%;
+    margin: auto;
+}
+
+.logo-section .logo-nav .logo-container .to-chuc-item #khoa {
+    width: auto;
+    height: 76%;
+    margin: auto;
+}
+
+.logo-section .logo-nav .logo-container .to-chuc-item #clb {
+    width: auto;
+    height: 90%;
+    margin: auto;
+    margin-top: 15%;
+}
 .logo-section .logo-nav .logo-container .to-chuc-item img {
     width: 100%;
     height: auto;
 }
 
-.logo-section .logo-nav .logo-container .dong-item {
-    width: 14vw;
-}
-
-.logo-section .logo-nav .logo-container .dong-item img {
-    width: 100%;
-}
 
 .logo-section .logo-nav .logo-container .vang-item {
-    width: 20vw;
+    width: 15vw;
+    height: 6vw;
+    background-color: white;
+    border-radius: 4px; 
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.logo-section .logo-nav .logo-container .vang-item #bosch {
+    width: auto;
+    margin: auto;
+    height: 8vw;
+    margin-top: -1vw;
 }
 
+.logo-section .logo-nav .logo-container .vang-item #dek {
+    width: auto;
+    margin: auto;
+    height: 5vw;
+}
+
+.logo-section .logo-nav .logo-container .vang-item #faraday {
+    height: 4.3vw;
+    width: auto;
+    margin: auto;
+}
+
+.logo-section .logo-nav .logo-container .vang-item #gannha {
+    height: 3.5vw;
+    margin-right: 8%;
+    margin-top: 1.5vw;
+    width: auto;
+}
 .logo-section .logo-nav .logo-container .vang-item img {
     width: 100%;
 }
 
+
+
 .logo-section .logo-nav .logo-container .hanh-item {
-    width: 15vw;
+    width: 16vw;
+    height: 6vw;
+    background-color: white;
+    border-radius: 4px; 
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
 }
 
-.logo-section .logo-nav .logo-container .hanh-item img {
-    width: 100%;
+.logo-section .logo-nav .logo-container .hanh-item #fpt {
+    height: 5.2vw;
+    width: auto;
+    margin: auto;
 }
+
+.logo-section .logo-nav .logo-container .hanh-item #asic {
+    height: 5.3vw;
+    width: auto;
+    margin: auto;
+}
+
+
 
 
 /*end logo section */
@@ -91,6 +223,13 @@ h5 {
     text-align: center;
 }
 
+.control-section .previous-nav, .control-section .next-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .control-section .control-nav {
     display: flex;
     flex-direction: column;
@@ -100,64 +239,72 @@ h5 {
 
 .previous-button,
 .next-button {
-    background-color: #033649;
+    
     color: white;
     width: 35vw;
-    font-size: 18px;
+    /* height: 100%; */
+    padding: 3px 0;
+    font-family: 'Georama',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
-    transition: .3s;
+    
+    background-size: 200% auto;
+
+    
+    transition: 0.3s;
 }
 
+.btn-color
+{
+   background-image:  linear-gradient(to right,
+   #912C24 0%,
+     rgba(242,97,68,1) 52%,
+     #f26144 100%);
+}
 .previous-button:hover,
 .next-button:hover {
-    background-color: #065f80;
+    background-position: right center;
+    
 }
 
 .swap-button,
-.load-button {
-    background-color: #033649;
+.load-button,
+.save-button {
     color: white;
     width: 17vw;
-    font-size: 18px;
+    font-family: 'Georama',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
     border-radius: 4px;
+    padding: 3px 0;
     cursor: pointer;
     margin-bottom: 1px;
-    transition: .3s;
+    background-size: 200% auto;
+
+    
+    transition: 0.3s;
     margin: 0 10px;
     text-align: center;
 }
 
 .swap-button:hover,
 .load-button:hover {
-    background-color: #065f80;
-}
-
-.save-button {
-    text-align: center;
-    background-color: #036564;
-    color: white;
-    width: 17vw;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 18px;
-    height: 24px;
-    font-weight: 600;
-    transition: .3s;
+    background-position: right center;
 }
 
 .save-button:hover {
-    background-color: #04a8a6;
+    background-position: right center;
 }
-
 .team-info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
+  color: white;
 }
 
 .team-info-size {
@@ -169,28 +316,35 @@ h5 {
   padding: 10px 0;
 }
 
-.team-info-2 {
-    color: red;
-}
 
-.team-info-1 {
-    color: blue;
-}
+
 
 .img1vs1 {
     margin: auto;
     justify-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+    justify-content: center;
 }
 
 .team-name {
-  font-weight: bolder;
-  font-size: large;
-  justify-content: center;
+    
+    justify-content: center;
+    font-family: 'Genos';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 27px;
+    letter-spacing: 0.08em;;
 }
 
 .controller {
-  justify-content: center;
-  font-weight: lighter;
+    justify-content: center;
+    font-weight:lighter;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .button-nav {
@@ -204,8 +358,11 @@ h5 {
 
 .stopwatch {
   height: 50px;
-  background: rgb(2,0,36);
-  background: linear-gradient(124deg, rgba(2,0,36,1) 0%, rgba(3,101,100,1) 58%, rgba(139,187,187,1) 100%);
+  width: 90%;
+  margin: 0 auto;
+  background: var(--time-counter);
+  border: 1px solid white;
+  border-bottom: none; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,6 +371,14 @@ h5 {
   margin-bottom: 7px;
 }
 
+#stopwatch-time {
+    font-family: 'Black Ops One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+
+
+}
 /* Checkpoint-section */
 
 .checkpoint-section {
@@ -227,30 +392,41 @@ h5 {
 }
 
 .generate-checkpoint_blue {
-    background-color: rgba(62, 126, 223, 0.329);
     padding-right : 10px;
 }
 
 .generate-checkpoint_red {
-    background-color: rgba(255, 0, 0, 0.329);
     padding-left : 10px;
 }
 
+.generate-checkpoint.generate-checkpoint_blue .checkpoint {
+    background:var(--blue-linear);
+    color: white;
+    border: 1px solid white;
+    border-bottom: none;
+}
+
+.generate-checkpoint.generate-checkpoint_red .checkpoint {
+    background:var(--yellow-linear);
+    color: white;
+    border: 1px solid white;
+    border-top: none;
+}
 .checkpoint {
     width: 48vw;
-    padding: 2px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 5px 0;
-    background-color: #CDB380;
-    border-radius: 3px;
+    margin: 4px 0; 
+    border-radius: 4px;
+    
+    font-family:'Genos', sans-serif; 
+    font-size: 25px;
 }
 
 .checkpoint h4 {
     margin: 2px 2px;
     padding: 0 6px;
-    font-size: larger;
 }
 
 .not-pass:nth-child(even) {
@@ -258,11 +434,11 @@ h5 {
 }
 
 .pass {
-    background-color: #2EA32C;
+    background: var(--pass-checkpoint);
 }
 
 .outline {
-  background-color: red;
+    background: var(--fail-checkpoint);
 }
 
 /* nếu team thua thì sẽ chuyển sang màu xám  */
@@ -272,16 +448,27 @@ h5 {
     color: white;
 }
 
+.generate-checkpoint.generate-checkpoint_blue .result {
+    background: var(--blue-linear);
+    border: 1px solid white;
+    border-bottom: none;
+}
+
+.generate-checkpoint.generate-checkpoint_red .result {
+    background: var(--yellow-linear);
+    border: 1px solid white;
+    border-top: none;
+}
 .result {
     display: flex;
     flex-direction: column;
     /* background-color: #069b98; */
-    background: rgb(2,0,36);
-    background: linear-gradient(124deg, rgba(2,0,36,1) 0%, rgba(3,101,100,1) 58%, rgba(139,187,187,1) 100%);
     color: white;
     border-radius: 4px;
     margin-top: 10px;
-    padding: 5px 0;
+    padding: 0px 0;
+    font-family:'Genos', sans-serif; 
+    font-size: 22px;
 }
 
 .result-detail {
@@ -292,7 +479,7 @@ h5 {
 }
 
 .result h4 {
-    margin: 2px 5px;
+    margin: 0px 5px;
 }
 
 
